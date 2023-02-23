@@ -8,6 +8,11 @@
 
 ![BranchPredictionUnit_Architecture](Document/Slide2.jpg)
 
+## 规划
+
+* 使用verilator结合make来自动化执行分支预测器仿真测试
+* 在基础版本后持续改进以及做对照版本，放在分支里，然后都可以测，都可以比较
+
 ## 进度log
 
 * 2023.2.23 初建仓库，目前正在完成两位饱和计数器更新逻辑
