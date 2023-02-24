@@ -17,9 +17,9 @@ VL_MODULE(Vtop___024root) {
   public:
 
     // PORTS
-    VL_IN8(a,0,0);
-    VL_IN8(b,0,0);
-    VL_OUT8(f,0,0);
+    VL_IN8(CurrentValue,1,0);
+    VL_IN8(Taken,0,0);
+    VL_OUT8(NextValue,1,0);
 
     // INTERNAL VARIABLES
     Vtop__Syms* vlSymsp;  // Symbol table

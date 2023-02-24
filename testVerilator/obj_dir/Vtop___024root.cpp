@@ -12,7 +12,19 @@ VL_INLINE_OPT void Vtop___024root___combo__TOP__1(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___combo__TOP__1\n"); );
     // Body
-    vlSelf->f = ((IData)(vlSelf->a) ^ (IData)(vlSelf->b));
+    vlSelf->NextValue = ((2U & (IData)(vlSelf->NextValue)) 
+                         | (1U & ((((~ (IData)(vlSelf->CurrentValue)) 
+                                    & (IData)(vlSelf->Taken)) 
+                                   | (IData)((2U == 
+                                              (3U & (IData)(vlSelf->CurrentValue))))) 
+                                  | (((IData)(vlSelf->CurrentValue) 
+                                      >> 1U) & (IData)(vlSelf->Taken)))));
+    vlSelf->NextValue = ((1U & (IData)(vlSelf->NextValue)) 
+                         | (((((IData)(vlSelf->CurrentValue) 
+                               | ((IData)(vlSelf->CurrentValue) 
+                                  >> 1U)) & (IData)(vlSelf->Taken)) 
+                             | (3U == (IData)(vlSelf->CurrentValue))) 
+                            << 1U));
 }
 
 void Vtop___024root___eval(Vtop___024root* vlSelf) {
@@ -49,9 +61,9 @@ void Vtop___024root___eval_debug_assertions(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_debug_assertions\n"); );
     // Body
-    if (VL_UNLIKELY((vlSelf->a & 0xfeU))) {
-        Verilated::overWidthError("a");}
-    if (VL_UNLIKELY((vlSelf->b & 0xfeU))) {
-        Verilated::overWidthError("b");}
+    if (VL_UNLIKELY((vlSelf->CurrentValue & 0xfcU))) {
+        Verilated::overWidthError("CurrentValue");}
+    if (VL_UNLIKELY((vlSelf->Taken & 0xfeU))) {
+        Verilated::overWidthError("Taken");}
 }
 #endif  // VL_DEBUG
