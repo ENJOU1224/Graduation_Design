@@ -15,7 +15,7 @@ reg		[1:0] Counter;
 wire	[1:0] CounterNextValue;
 
 assign CounterNextValue = {{2{~CounterUpdate}} & Counter		}						// 如果没有遇到分支指令，则维持现在的值
-												| {{2{ CounterUpdate}} & NextValue };					// 如果遇到分支指令，换用新值
+												| {{2{ CounterUpdate}} & NextValue	};					// 如果遇到分支指令，换用新值
 
 // 两位饱和寄存器，复位状态为01（weakly not taken） 
 always @(posedge clk or negedge rstn) begin
