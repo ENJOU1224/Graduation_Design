@@ -1,4 +1,4 @@
-#include "Vtop.h"
+#include "VLocalPrediction.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -20,7 +20,7 @@
 int main(int argc, char** argv) {
     VerilatedContext* contextp = new VerilatedContext;
     contextp->commandArgs(argc, argv);
-    Vtop* top = new Vtop{contextp};
+    VLocalPrediction* top = new VLocalPrediction{contextp};
 
 		// reset(top,10);
 		while (!contextp->gotFinish()) {

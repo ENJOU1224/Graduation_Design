@@ -1,1 +1,0 @@
-obj_dir/Vlight.cpp obj_dir/Vlight.h obj_dir/Vlight.mk obj_dir/Vlight__Syms.cpp obj_dir/Vlight__Syms.h obj_dir/Vlight___024root.cpp obj_dir/Vlight___024root.h obj_dir/Vlight___024root__Slow.cpp obj_dir/Vlight__ver.d obj_dir/Vlight_classes.mk  : /usr/local/bin/verilator_bin /usr/local/bin/verilator_bin vsrc/light.v 
