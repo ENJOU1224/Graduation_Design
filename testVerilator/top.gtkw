@@ -1,0 +1,47 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Mar  6 13:10:10 2023
+[*]
+[dumpfile] "/home/enjou/work/Design/testVerilator/wave.vcd"
+[dumpfile_mtime] "Mon Mar  6 13:05:41 2023"
+[dumpfile_size] 2533
+[savefile] "/home/enjou/work/Design/testVerilator/top.gtkw"
+[timestart] 14
+[size] 1920 1012
+[pos] -101 -101
+*-2.044818 24 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.LocalPrediction.
+[sst_width] 247
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 286
+@28
+TOP.LocalPrediction.clk
+TOP.LocalPrediction.rstn
+@c00200
+-gener
+@28
+TOP.LocalPrediction.CounterNextValueGenerator1.CurrentValue[1:0]
+TOP.LocalPrediction.CounterNextValueGenerator1.NextValue[1:0]
+TOP.LocalPrediction.CounterNextValueGenerator1.Taken
+@1401200
+-gener
+@800201
+-predictionj
+@29
+TOP.LocalPrediction.BranchCounter[1:0]
+TOP.LocalPrediction.BranchTaken
+@23
+TOP.LocalPrediction.CommitedBranchPC[9:0]
+@29
+TOP.LocalPrediction.CounterUpdate
+TOP.LocalPrediction.NextValue[1:0]
+@23
+TOP.LocalPrediction.PredictBranchPC[9:0]
+@29
+TOP.LocalPrediction.PredictCounter[1:0]
+@1000201
+-predictionj
+[pattern_trace] 1
+[pattern_trace] 0
